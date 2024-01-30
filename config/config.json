@@ -25,5 +25,7 @@
 	// 默认单次回复最大token数量
 	"gpttokenmax": 1024,
 	// discord机器人token
-	"token": "Mzgxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+	"token": "Mzgxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+	// uptime kuma 推送地址
+	"kumapushurl": ""
 }
