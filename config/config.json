@@ -1,0 +1,29 @@
+{
+	// 接口地址
+	"baseurl": "https://api.openai.com/v1",
+	// 频道配置
+	"channels": [
+		{
+			// 频道ID
+			"id": "38567xxxxxxxxx1419",
+			// 单次最大服务时间
+			"maxservicetime": 300,
+			// 单次回复最大token数量
+			"maxtoken": 768,
+			// 是否为单聊
+			"one2one": false
+		},
+		{
+			"id": "38758xxxxxxxxx9412",
+			"maxservicetime": 600,
+			"maxtoken": 1024,
+			"one2one": true
+		}
+	],
+	// 你的OpenAI密钥
+	"gpttoken": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+	// 默认单次回复最大token数量
+	"gpttokenmax": 1024,
+	// discord机器人token
+	"token": "Mzgxxxxxxxxxxxxxxxx.xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+}

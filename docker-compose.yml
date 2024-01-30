@@ -5,7 +5,7 @@ networks:
 
 services:
   yui:
-    image: gpt-discord:dev
+    build: .
     volumes:
       - ./config:/config
       - /etc/ssl/certs:/etc/ssl/certs
