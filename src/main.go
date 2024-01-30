@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"net/http"
 	"regexp"
 	"strconv"
 	"strings"
@@ -46,6 +47,29 @@ var channelSettings []ChannelConfig
 
 var gptToken string
 var botToken string
+var gKumaPushURL string
+
+func kumaPushInit() {
+	if gKumaPushURL != "" {
+		var responseTime int64 = 1
+		kumaPush := func() {
+			start := time.Now()
+			_, err := http.Get(gKumaPushURL + strconv.FormatInt(responseTime, 10))
+			if err == nil {
+				responseTime = time.Since(start).Milliseconds()
+			} else {
+				responseTime = 9999
+			}
+		}
+		kumaPush()
+		go func() {
+			minute := time.NewTicker(1 * time.Minute)
+			for range minute.C {
+				kumaPush()
+			}
+		}()
+	}
+}
 
 func init() {
 	busyChannel = make(map[string]bool)
@@ -55,6 +79,7 @@ func init() {
 	viper.SetDefault("gpttokenmax", 512)
 	viper.SetDefault("gpttoken", "0")
 	viper.SetDefault("token", "0")
+	viper.SetDefault("kumapushurl", "")
 	viper.SetDefault("baseurl", openai.DefaultConfig("").BaseURL)
 	viper.SetDefault("channels", []ChannelConfig{})
 	viper.SetConfigType("json")
@@ -64,6 +89,8 @@ func init() {
 	if err != nil {
 		panic(fmt.Errorf("fatal error config file: %s", err))
 	}
+	gKumaPushURL = viper.Get("kumapushurl").(string)
+	kumaPushInit()
 
 	botToken = viper.Get("token").(string)
 	fmt.Println("botToken=" + botToken)
