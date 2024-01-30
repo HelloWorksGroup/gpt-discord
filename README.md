@@ -13,7 +13,7 @@
 # 初次运行
 make
 # 升级容器
-makeupgrade
+make upgrade
 # 移除容器
-makeclean
+make clean
 ```
