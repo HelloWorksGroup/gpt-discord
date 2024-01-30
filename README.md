@@ -1,9 +1,7 @@
 # 简易Discord GPT聊天机器人
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/HelloWorksGroup/gpt-discord?style=flat&color=ffaaaa)
-
 [![Software License](https://img.shields.io/github/license/HelloWorksGroup/gpt-discord)](LICENSE)
-
 ![Docker](https://img.shields.io/badge/Build_with-Docker-ffaaaa)
 
 ## 部署
