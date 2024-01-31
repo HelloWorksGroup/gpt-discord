@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"regexp"
 	"strconv"
 	"strings"
@@ -17,6 +16,7 @@ import (
 	"github.com/bwmarrin/discordgo"
 	"github.com/spf13/viper"
 
+	kuma "github.com/Nigh/kuma-push"
 	openai "github.com/sashabaranov/go-openai"
 )
 
@@ -50,25 +50,8 @@ var botToken string
 var gKumaPushURL string
 
 func kumaPushInit() {
-	if gKumaPushURL != "" {
-		var responseTime int64 = 1
-		kumaPush := func() {
-			start := time.Now()
-			_, err := http.Get(gKumaPushURL + strconv.FormatInt(responseTime, 10))
-			if err == nil {
-				responseTime = time.Since(start).Milliseconds()
-			} else {
-				responseTime = 9999
-			}
-		}
-		kumaPush()
-		go func() {
-			minute := time.NewTicker(1 * time.Minute)
-			for range minute.C {
-				kumaPush()
-			}
-		}()
-	}
+	k := kuma.New(gKumaPushURL)
+	k.Start()
 }
 
 func init() {

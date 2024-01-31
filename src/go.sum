@@ -1,3 +1,5 @@
+github.com/Nigh/kuma-push v0.1.0 h1:EtuEuLIxUpwOY6om/gWllSz587Ecj/Iu2m0k8XGFj2M=
+github.com/Nigh/kuma-push v0.1.0/go.mod h1:e/WsNOed5np3Z1Olmrz7SP/vnq6SA0jZAdvZQpWry+o=
 github.com/Nigh/openai-ezgo v0.0.0-20240108091924-094a8c7b3f59 h1:O/g6HJ9o6uKU6kq+PjoTZYIhCjj7JW346StCCaiur2E=
 github.com/Nigh/openai-ezgo v0.0.0-20240108091924-094a8c7b3f59/go.mod h1:3icxMiO/PZmCiRLMvvWVWYVMHZpGOC2IL3mtu/uha8c=
 github.com/bwmarrin/discordgo v0.27.1 h1:ib9AIc/dom1E/fSIulrBwnez0CToJE113ZGt4HoliGY=
