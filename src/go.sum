@@ -1,7 +1,7 @@
 github.com/Nigh/kuma-push v0.1.0 h1:EtuEuLIxUpwOY6om/gWllSz587Ecj/Iu2m0k8XGFj2M=
 github.com/Nigh/kuma-push v0.1.0/go.mod h1:e/WsNOed5np3Z1Olmrz7SP/vnq6SA0jZAdvZQpWry+o=
-github.com/Nigh/openai-ezgo v0.0.0-20240108091924-094a8c7b3f59 h1:O/g6HJ9o6uKU6kq+PjoTZYIhCjj7JW346StCCaiur2E=
-github.com/Nigh/openai-ezgo v0.0.0-20240108091924-094a8c7b3f59/go.mod h1:3icxMiO/PZmCiRLMvvWVWYVMHZpGOC2IL3mtu/uha8c=
+github.com/Nigh/openai-ezgo v0.0.0-20240723085604-609f08b0d5f3 h1:ayxYbZPw8NFgokT1mHVO8od8K63yhSCYziBP0V+S4Qs=
+github.com/Nigh/openai-ezgo v0.0.0-20240723085604-609f08b0d5f3/go.mod h1:tmMKdZRfIeu+NnnTuOS2LaMffK7rOhmmNVrbfrKr9qE=
 github.com/bwmarrin/discordgo v0.27.1 h1:ib9AIc/dom1E/fSIulrBwnez0CToJE113ZGt4HoliGY=
 github.com/bwmarrin/discordgo v0.27.1/go.mod h1:NJZpH+1AfhIcyQsPeuBKsUtYrRnjkyu0kIVMCHkZtRY=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
@@ -37,8 +37,8 @@ github.com/sagikazarmark/locafero v0.4.0 h1:HApY1R9zGo4DBgr7dqsTH/JJxLTTsOt7u6ke
 github.com/sagikazarmark/locafero v0.4.0/go.mod h1:Pe1W6UlPYUk/+wc/6KFhbORCfqzgYEpgQ3O5fPuL3H4=
 github.com/sagikazarmark/slog-shim v0.1.0 h1:diDBnUNK9N/354PgrxMywXnAwEr1QZcOr6gto+ugjYE=
 github.com/sagikazarmark/slog-shim v0.1.0/go.mod h1:SrcSrq8aKtyuqEI1uvTDTK1arOWRIczQRv+GVI1AkeQ=
-github.com/sashabaranov/go-openai v1.17.9 h1:QEoBiGKWW68W79YIfXWEFZ7l5cEgZBV4/Ow3uy+5hNY=
-github.com/sashabaranov/go-openai v1.17.9/go.mod h1:lj5b/K+zjTSFxVLijLSTDZuP7adOgerWeFyZLUhAKRg=
+github.com/sashabaranov/go-openai v1.27.0 h1:L3hO6650YUbKrbGUC6yCjsUluhKZ9h1/jcgbTItI8Mo=
+github.com/sashabaranov/go-openai v1.27.0/go.mod h1:lj5b/K+zjTSFxVLijLSTDZuP7adOgerWeFyZLUhAKRg=
 github.com/sourcegraph/conc v0.3.0 h1:OQTbbt6P72L20UqAkXXuLOj79LfEanQ+YQFNpLA9ySo=
 github.com/sourcegraph/conc v0.3.0/go.mod h1:Sdozi7LEKbFPqYX2/J+iBAM6HpqSLTASQIKqDmF7Mt0=
 github.com/spf13/afero v1.11.0 h1:WJQKhtpdm3v2IzqG8VMqrr6Rf3UYpEF239Jy9wNepM8=

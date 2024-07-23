@@ -17,7 +17,6 @@ import (
 	"github.com/spf13/viper"
 
 	kuma "github.com/Nigh/kuma-push"
-	openai "github.com/sashabaranov/go-openai"
 )
 
 var botID string
@@ -63,7 +62,7 @@ func init() {
 	viper.SetDefault("gpttoken", "0")
 	viper.SetDefault("token", "0")
 	viper.SetDefault("kumapushurl", "")
-	viper.SetDefault("baseurl", openai.DefaultConfig("").BaseURL)
+	viper.SetDefault("baseurl", "https://api.openai.com/v1")
 	viper.SetDefault("channels", []ChannelConfig{})
 	viper.SetConfigType("json")
 	viper.SetConfigName("config")

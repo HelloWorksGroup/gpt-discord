@@ -4,9 +4,8 @@ go 1.21.5
 
 require (
 	github.com/Nigh/kuma-push v0.1.0
-	github.com/Nigh/openai-ezgo v0.0.0-20240108091924-094a8c7b3f59
+	github.com/Nigh/openai-ezgo v0.0.0-20240723085604-609f08b0d5f3
 	github.com/bwmarrin/discordgo v0.27.1
-	github.com/sashabaranov/go-openai v1.17.9
 	github.com/spf13/viper v1.18.2
 )
 
@@ -19,6 +18,7 @@ require (
 	github.com/pelletier/go-toml/v2 v2.1.0 // indirect
 	github.com/sagikazarmark/locafero v0.4.0 // indirect
 	github.com/sagikazarmark/slog-shim v0.1.0 // indirect
+	github.com/sashabaranov/go-openai v1.27.0 // indirect
 	github.com/sourcegraph/conc v0.3.0 // indirect
 	github.com/spf13/afero v1.11.0 // indirect
 	github.com/spf13/cast v1.6.0 // indirect
