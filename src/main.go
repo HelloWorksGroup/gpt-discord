@@ -268,7 +268,11 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 		s.MessageReactionAdd(m.ChannelID, m.ID, "⏳")
 		ans := openaiezgo.NewSpeech(m.ChannelID, words)
 		if len(ans) > 0 {
-			reply(ans)
+			splittedReply := simpleMarkdownBlockSplitter(ans)
+			for _, v := range splittedReply {
+				reply(v)
+				time.Sleep(500 * time.Millisecond)
+			}
 		}
 		s.MessageReactionRemove(m.ChannelID, m.ID, "⏳", botID)
 		s.MessageReactionAdd(m.ChannelID, m.ID, "✅")
@@ -286,7 +290,7 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 					return
 				}
 				// 响应对话
-				aiChat(words)
+				go aiChat(words)
 			}
 		} else {
 			// 空闲中 at启动
@@ -309,6 +313,6 @@ func messageCreate(s *discordgo.Session, m *discordgo.MessageCreate) {
 			return
 		}
 		// 响应对话
-		aiChat(words)
+		go aiChat(words)
 	}
 }
